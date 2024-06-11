@@ -7,4 +7,3 @@ This project is a personal blog site created to share recipes and content about 
 
 - HTML5
 - CSS3
-- Google Fonts
