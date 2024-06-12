@@ -1,0 +1,132 @@
+/* Genel stiller */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+nav {
+    background-color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.service-details {
+    text-align: left;
+}
+
+.service-details h3 {
+    color: #333;
+}
+
+.service-details p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Ana sayfa stilleri */
+.main-content {
+    text-align: center;
+}
+
+/* Hakkında, Servisler ve İletişim sayfası stilleri */
+.page-content {
+    text-align: center;
+    
+}
+
+/* Form stilleri */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center; /* Form içeriğini ortala */
+    display: inline-block; /* Kutuyu tam ortaya yerleştir */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px); /* Genişliği ayarla */
+    padding: 10px;
+    margin: 5px 0; /* Boşlukları ayarla */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Kenarlık ve dolgu dahil genişliği hesapla */
+}
+
+textarea {
+    resize: vertical; /* Sadece dikey boyutu değiştirilebilir */
+}
+
+input[type="submit"] {
+    width: 100%; /* Buton genişliğini ayarla */
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 0; /* Dikey boşluğu ayarla */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff8533;
+}
