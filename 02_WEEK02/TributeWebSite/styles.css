@@ -101,7 +101,14 @@ h2 {
 
 #info {
     background-color: rgb(244, 244, 244);
+    
    
+}
+
+#info p {
+    text-align: justify; /* Justify text for even spacing */
+    margin: 20px;
+    
 }
 
 #books {
