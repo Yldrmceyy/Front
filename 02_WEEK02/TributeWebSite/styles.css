@@ -1,0 +1,142 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative; 
+}
+
+.content {
+    flex: 1;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+h1{
+    color: rgb(255, 235, 59);
+    word-spacing: 5px;
+    letter-spacing: 3.5px;
+    margin: 0;
+    padding: 16px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 16px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+nav ul li a:hover {
+    color:rgb(255, 235, 59); 
+    
+}
+
+#home {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.background-image {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('hermann_hesse.jpg') no-repeat center center/cover;
+    filter: brightness(60%);
+    z-index: -1;
+}
+
+#home .quote blockquote p{
+    margin-top: 10px;
+    font-style: normal;
+    color: #333;
+
+} 
+#home .quote blockquote {
+    font-size: 18px; 
+    font-style: italic; 
+    word-spacing: 2px; 
+    letter-spacing: 1.5px; 
+    padding: 20px; 
+    background:rgb(255, 235, 59, 0.7);
+    border-radius: 10px;
+}
+
+
+section {
+    padding: 64px 32px;
+    margin-top: 64px;
+}
+
+h2 {
+    color: #3a3a3a;
+}
+
+#info {
+    background-color: #f4f4f4;
+}
+
+#books {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.book-item {
+    background-color: rgb(255, 235, 59);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    
+}
+
+.book-item:hover {
+    background-color: rgb(53, 51, 40,0.1);
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute; 
+    width: 100%;
+    bottom: 0;
+}
