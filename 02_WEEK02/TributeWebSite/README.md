@@ -1,7 +1,4 @@
 # Hermann Hesse Tribute Website
-
-![Hermann Hesse](./img/Hermann_Hesse.jpg)
-
 ## Introduction
 This is a tribute website dedicated to Hermann Hesse, a renowned German-born Swiss poet, novelist, and painter. The website provides insights into his life, literary works, and philosophical contributions.
 
