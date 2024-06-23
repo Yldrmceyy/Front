@@ -99,13 +99,14 @@ h2 {
     color: #3a3a3a;
 }
 
-#info {
+#about {
     background-color: rgb(244, 244, 244);
-    
+    border: #3a3a3a;
+   
    
 }
 
-#info p {
+#about p {
     text-align: justify; /* Justify text for even spacing */
     margin: 20px;
     

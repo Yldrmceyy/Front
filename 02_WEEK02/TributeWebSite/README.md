@@ -1,7 +1,4 @@
 # Hermann Hesse Tribute Website
-
-![Hermann Hesse](./img/Hermann_Hesse.jpg)
-
 ## Introduction
 This is a tribute website dedicated to Hermann Hesse, a renowned German-born Swiss poet, novelist, and painter. The website provides insights into his life, literary works, and philosophical contributions.
 
@@ -20,7 +17,7 @@ The project includes the following main files:
 ### Home Section
 - Displays a background image of Hermann Hesse and a meaningful quote attributed to him.
 
-### Info Section
+### About Section
 - Provides an overview of Hermann Hesse's life and literary career, highlighting his exploration of themes like authenticity, self-discovery, and spirituality. Mentions his debut novel "Peter Camenzind" (1904) and other influential works such as "Demian" (1919), "Siddhartha" (1922), and "The Glass Bead Game" (1943).
 
 ### Books Section
