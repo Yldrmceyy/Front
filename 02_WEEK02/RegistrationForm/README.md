@@ -9,3 +9,6 @@ The registration form project is created with the following technologies:
 - **CSS**: for styling and layout
 
 You can view and interact with the live form [here](https://register-form-cy.netlify.app/).
+
+## Form Screenshot
+![Form Screenshot](./img/register-form.jpg)
