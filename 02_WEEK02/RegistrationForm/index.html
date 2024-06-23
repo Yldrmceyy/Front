@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page Title -->
+    <div class="container">
+        <h1 id="title">Registration Form</h1>
+
+        <!-- Description -->
+        <p id="description">Please fill out the form below.</p>
+
+        <!-- Form Element -->
+        <form id="survey-form">
+
+            <!-- Name Input Field -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email Input Field -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Number Input Field -->
+            <div class="form-group">
+                <label id="number-label" for="number">Age:</label>
+                <input id="number" type="number" placeholder="Enter your age" min="1" max="120" required>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div class="form-group">
+                <label for="dropdown">Gender:</label>
+                <select id="dropdown" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="form-group radio-group">
+                <p>Events you want to participate in:</p>
+                <div class="radio-options">
+                    <input type="radio" id="event1" name="event" value="conference" required>
+                    <label for="event1">Conference</label>
+                    <input type="radio" id="event2" name="event" value="workshop">
+                    <label for="event2">Workshop</label>
+                </div>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <p>Your interests:</p>
+                <div class="checkbox-options">
+                    <input type="checkbox" id="interest1" name="interest" value="technology">
+                    <label for="interest1">Technology</label>
+                    <input type="checkbox" id="interest2" name="interest" value="art">
+                    <label for="interest2">Art</label>
+                </div>
+            </div>
+
+            <!-- Text Area -->
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" placeholder="Enter any additional comments"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

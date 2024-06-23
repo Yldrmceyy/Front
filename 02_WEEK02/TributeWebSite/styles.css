@@ -125,7 +125,7 @@ h2 {
 }
 
 .book-item {
-    background-color: rgb(255, 235, 59);
+    background-color: #ffeb3b;
     padding: 16px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
