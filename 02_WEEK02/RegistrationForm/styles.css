@@ -1,0 +1,152 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+   
+   background-image: url('./img/pic.jpg');
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   background-size: cover;
+   background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+/* Container Styling */
+.container {
+    background-color: rgba(222, 222, 222, 0.7);
+    
+    margin: 20px; 
+    padding: 20px; 
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 90%; 
+    max-height: 90%; 
+    overflow-y: auto; 
+    text-align: center;
+
+}
+
+/* Title and Description Styling */
+#title {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#description {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 15px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group.radio-group {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.radio-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.radio-options input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+.checkbox-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.checkbox-options input[type="checkbox"] {
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Input and Select Styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color:#ffeb3b;
+    outline: none;
+    
+}
+
+/* Textarea Styling */
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Submit Button Styling */
+#submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #100f0f;
+    background-image: linear-gradient(to right, #070707, #949393);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, #ffeb3b, #faf2a7);
+}
+
+/* Additional Styling for better appearance */
+.form-group p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
