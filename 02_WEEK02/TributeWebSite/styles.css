@@ -25,7 +25,7 @@ header {
     top: 0;
     z-index: 1000;
 }
-h1{
+h1 {
     color: rgb(255, 235, 59);
     word-spacing: 5px;
     letter-spacing: 3.5px;
@@ -45,11 +45,9 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    
 }
 nav ul li a:hover {
-    color:rgb(255, 235, 59); 
-    
+    color: rgb(255, 235, 59); 
 }
 
 #home {
@@ -68,16 +66,15 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('hermann_hesse.jpg') no-repeat center center/cover;
+    background: url('./img/Hermann_Hesse.jpg') no-repeat center center/cover;
     filter: brightness(60%);
     z-index: -1;
 }
 
-#home .quote blockquote p{
+#home .quote blockquote p {
     margin-top: 10px;
     font-style: normal;
     color: #333;
-
 } 
 #home .quote blockquote {
     font-size: 18px; 
@@ -85,10 +82,9 @@ nav ul li a:hover {
     word-spacing: 2px; 
     letter-spacing: 1.5px; 
     padding: 20px; 
-    background:rgb(255, 235, 59, 0.7);
+    background: rgba(255, 235, 59, 0.7);
     border-radius: 10px;
 }
-
 
 section {
     padding: 64px 32px;
@@ -102,14 +98,11 @@ h2 {
 #about {
     background-color: rgb(244, 244, 244);
     border: #3a3a3a;
-   
-   
 }
 
 #about p {
-    text-align: justify; /* Justify text for even spacing */
+    text-align: justify;
     margin: 20px;
-    
 }
 
 #books {
@@ -131,12 +124,10 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 200px;
     text-align: center;
-    
 }
 
 .book-item:hover {
-    background-color: rgb(53, 51, 40,0.1);
-
+    background-color: rgba(53, 51, 40, 0.1);
 }
 
 footer {
@@ -147,4 +138,55 @@ footer {
     position: absolute; 
     width: 100%;
     bottom: 0;
+}
+
+/* Mobil cihazlar için stiller */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 8px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    section {
+        padding: 32px 16px;
+    }
+
+    .book-list {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .book-item {
+        width: 100%;
+    }
+}
+
+/* Tablet cihazlar için stiller */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 12px 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 12px;
+    }
+
+    section {
+        padding: 48px 24px;
+    }
+
+    .book-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .book-item {
+        width: calc(50% - 16px);
+    }
 }
