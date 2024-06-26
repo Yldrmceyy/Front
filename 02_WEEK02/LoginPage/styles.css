@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', Helvetica;
-    background: url('img.jpg') no-repeat center center fixed; 
+    background: url('./img/img.jpg') no-repeat center center fixed; 
     background-size: cover;
     display: flex;
     justify-content: center;
