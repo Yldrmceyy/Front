@@ -3,7 +3,8 @@
 This is a tribute website dedicated to Hermann Hesse, a renowned German-born Swiss poet, novelist, and painter. The website provides insights into his life, literary works, and philosophical contributions.
 
 
-The layout has been designed to be responsive different devices.
+The layout has been designed to be responsive different devices.👇🏼
+
 ![Example GIF](../TributeWebSite/herman-hesse.gif)
 
 
