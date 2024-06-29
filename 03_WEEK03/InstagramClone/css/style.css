@@ -1,0 +1,54 @@
+::placeholder{
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  padding-left: 0px; 
+  background-image: url('/03_WEEK03/InstagramClone/assets/search-solid.svg');
+  background-repeat: no-repeat;
+  background-position: 55px center;
+  background-size: 16px 16px;
+  
+}
+
+.navbar{
+  height: 54px; 
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  padding-top: 54px; 
+}
+
+.middlearea .container {
+  max-height: 200px !important;
+}
+.storyphoto{
+  width: 60px;
+  height: 60px;
+  border: 2px solid red;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.storytext {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.rightpanellinks {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.rightpanellinks:hover {
+  text-decoration: none;
+  color: grey;
+}
+.postuserfont {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
