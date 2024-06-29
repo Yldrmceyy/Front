@@ -8,3 +8,5 @@ This project is a web application that clones the basic design of Instagram and 
 - Bootstrap
 - FontAwesome
 
+## 
+![Example GIF](./instaclone.gif)
