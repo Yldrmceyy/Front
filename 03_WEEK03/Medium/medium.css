@@ -16,3 +16,16 @@ body{
 .aside{
 position: sticky;
 }
+.border-top-dark{
+    border-top: 1px solid rgb(230, 230, 230,1)
+}
+.number-style {
+    font-weight: bold; /* Thick font */
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: #d3d3d3; /* Light gray color */
+    font-family: Arial, sans-serif; /* Ensure it uses a sans-serif font */
+    line-height:1; /* Adjust line height if needed */
+    margin-left: -10px;
+    
+   
+}
