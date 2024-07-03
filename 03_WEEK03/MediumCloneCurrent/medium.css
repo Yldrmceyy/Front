@@ -1,0 +1,153 @@
+body {
+    font-family: 'PT Serif', serif;
+    margin: 0; /* Varsayılan marjı kaldırarak yüksekliği daha kontrollü hale getiriyoruz */
+    padding: 0; /* Varsayılan dolguyu kaldırarak yüksekliği daha kontrollü hale getiriyoruz */
+    height: 100vh; /* Body yüksekliğini tam ekran yapıyoruz */
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-beije {
+    background-color: #f7f4ed;
+    flex: 1; /* İçeriğin yüksekliğini tam olarak kullanabilmesi için flex büyüme ayarı */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* İçeriği dikey olarak ortalamak için */
+}
+
+
+.border-bottom-dark {
+    border-bottom: 1px solid rgba(41, 41, 41, 0.41);
+ 
+}
+
+.display-1 {
+    font-size: 100px;
+    letter-spacing: -0.055em;
+    line-height: 95px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+div > .btn-dark {
+    background-color: #1A8917 !important;
+    width: 196px !important;
+    font-size: 19px !important;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 28px !important;
+    border: none;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.navbar {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nav-item {
+    font-family: inherit;
+    color: black;
+}
+
+.nav-link {
+    margin-right: 15px;
+}
+
+.btn {
+    border-radius: 99em;
+}
+
+.main-content {
+    flex: 1;
+}
+
+footer {
+    background-color: #f7f4ed;
+    border-top: 1px solid rgba(41, 41, 41, 0.41); /* Footer'ı sayfanın üstünde sabitlemek için */
+    width: 100%;
+    padding: 0.5rem 0; /* Yüksekliği azaltmak için padding değerlerini düşürdüm */
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+footer .col {
+    flex: 1 0 0%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+footer .list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .list-inline-item {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+footer .list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+footer .list-inline-item a {
+    color: #343a40;
+    text-decoration: none;
+    font-size: smaller;
+    font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.image-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    top: -30px; /* Adjust this value to move the image upwards */
+}
+
+.brand-img {
+    margin-right: 0;
+    padding-right: 0;
+    max-width: 100%;
+    height: auto;
+    margin-top: -20px; /* Bu değeri resmin yukarı kayması için ayarlayın */
+}
+
+
+@media (max-width: 1021px) {
+    footer .list-inline {
+        justify-content: center;
+    }
+
+    footer .list-inline-item {
+        margin-right: 0.5rem;
+    }
+}
