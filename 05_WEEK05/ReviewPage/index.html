@@ -3,62 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body >
-    
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-        </a>
-        <div class="flex md:order-2">
-          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
-            <span class="sr-only">Search</span>
-          </button>
-          <div class="relative hidden md:block">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-              </svg>
-              <span class="sr-only">Search icon</span>
+<body class="bg-gray-200">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-100 shadow">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a class="text-indigo-600 text-lg font-semibold mr-6" href="#">Link</a>
+                    <a class="text-gray-600 text-lg mr-6" href="#">Link</a>
+                    <a class="text-gray-600 text-lg" href="#">Link</a>
+                </div>
+                <img src="./logo.png" alt="" class="w-10 h-10">
+                <div class="flex items-center">
+                    <input class="border border-gray-300 rounded px-4 py-2 text-gray-600" type="text" placeholder="Search...">
+                    <a class="bg-indigo-600 text-white px-4 py-2 rounded ml-4" href="#">Log in</a>
+                </div>
             </div>
-            <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
-          </div>
-          <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
-          </button>
         </div>
-          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
-            <div class="relative mt-3 md:hidden">
-              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                </svg>
-              </div>
-              <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-gray-300">
+        <h1 class="text-4xl font-bold text-gray-900">Quisquam necessita vel laborum doloribus delectus</h1>
+        <p class="mt-4 text-gray-600">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p>
+        <div class="mt-8">
+            <a class="bg-indigo-600 text-white px-4 py-2 rounded mr-4" href="#">Get started</a>
+            <a class="bg-gray-600 text-white px-4 py-2 rounded" href="#">Learn more</a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-semibold text-gray-800">What our customers are saying about us</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <blockquote class="italic text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.</blockquote>
+                    <div class="mt-6">
+                        <h3 class="text-purple-600 text-lg">Distinctio Animi</h3>
+                        <p class="text-gray-600">Aliquam illum</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <blockquote class="italic text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.</blockquote>
+                    <div class="mt-6">
+                        <h3 class="text-purple-600 text-lg">Distinctio Animi</h3>
+                        <p class="text-gray-600">Aliquam illum</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <blockquote class="italic text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.</blockquote>
+                    <div class="mt-6">
+                        <h3 class="text-purple-600 text-lg">Distinctio Animi</h3>
+                        <p class="text-gray-600">Aliquam illum</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <blockquote class="italic text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.</blockquote>
+                    <div class="mt-6">
+                        <h3 class="text-purple-600 text-lg">Distinctio Animi</h3>
+                        <p class="text-gray-600">Aliquam illum</p>
+                    </div>
+                </div>
             </div>
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-gray-300">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-semibold text-gray-800">Contact us</h2>
+            <form class="mt-8">
+                <div class="mb-4">
+                    <input class="w-full p-4 rounded-lg border-2 border-gray-300" type="text" placeholder="Name">
+                </div>
+                <div class="mb-4">
+                    <input class="w-full p-4 rounded-lg border-2 border-gray-300" type="email" placeholder="Email">
+                </div>
+                <div class="mb-4">
+                    <textarea class="w-full p-4 rounded-lg border-2 border-gray-300" placeholder="Message"></textarea>
+                </div>
+                <button class="bg-indigo-600 text-white px-4 py-2 rounded" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <footer class="py-6 bg-gray-300">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <div>
+            <a class="text-gray-600 text-sm" href="#">Shop</a>
+            <a class="ml-4 text-gray-600 text-sm" href="#">About</a>
+            <a class="ml-4 text-gray-600 text-sm" href="#">Blog</a>
+            <a class="ml-4 text-gray-600 text-sm" href="#">Pricing</a>
+            <a class="ml-4 text-gray-600 text-sm" href="#">Contact</a>
+        </div>
+        <div class="flex items-center">
+            <a class="text-lg mr-4" href="#">
+                <div class="bg-indigo-700 rounded-full w-8 h-8 flex items-center justify-center">
+                    <i class="fab fa-instagram text-white w-4 h-4"></i>
+                </div>
+            </a>
+            <a class="text-lg mr-4" href="#">
+                <div class="bg-indigo-700 rounded-full w-8 h-8 flex items-center justify-center">
+                    <i class="fab fa-pinterest text-white w-4 h-4"></i>
+                </div>
+            </a>
+            <a class="text-lg mr-4" href="#">
+                <div class="bg-indigo-700 rounded-full w-8 h-8 flex items-center justify-center">
+                    <i class="fab fa-twitter text-white w-4 h-4"></i>
+                </div>
+            </a>
+            <a class="text-lg mr-4" href="#">
+                <div class="bg-indigo-700 rounded-full w-8 h-8 flex items-center justify-center">
+                    <i class="fab fa-facebook text-white w-4 h-4"></i>
+                </div>
+            </a>
+            <a class="text-lg" href="#">
+                <div class="bg-indigo-700 rounded-full w-8 h-8 flex items-center justify-center">
+                    <i class="fab fa-google text-white w-4 h-4"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
