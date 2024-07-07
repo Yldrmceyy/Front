@@ -1,6 +1,8 @@
 # Review Page
 ## Project Description
-This project is a responsive review page created using Tailwind CSS for styling and JavaScript for functionality. The page includes various sections such as a navigation bar, a hero section, testimonials, a contact form, and a footer. The design ensures a smooth and visually appealing experience across different devices, with a particular focus on mobile responsiveness.
+This project is a responsive review page using Tailwind CSS and JavaScript. It features a navigation bar, hero section, testimonials, contact form, and footer. The design ensures a smooth and visually appealing experience on all devices, with a focus on mobile responsiveness.
+
+You can view a live demo of the project here. [Live Demo](https://tailwindlandingpages.netlify.app)
 
 ## Features
 - **Responsive Design:** The page is designed to be fully responsive, adapting seamlessly to different screen sizes and devices.
