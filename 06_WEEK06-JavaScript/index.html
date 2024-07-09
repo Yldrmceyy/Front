@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. let anahtar kelimesi ile bir değişken tanımlayın ve ona favori renginizi atayın. Bu değişkeni konsola yazdırın.
+      let favoriteColor = "blue";
+      console.log("Favorite Color (let):", favoriteColor);
+
+      // 2. const anahtar kelimesi ile bir değişken tanımlayın ve ona doğum yılınızı atayın. Bu değişkeni konsola yazdırın.
+      const birthYear = 1995;
+      console.log("Birth Year (const):", birthYear);
+
+      // 3. var anahtar kelimesi ile bir değişken tanımlayın ve ona favori meyvenizi atayın. Bu değişkeni konsola yazdırın.
+      var favoriteFruit = "strawberry";
+      console.log("Favorite Fruit (var):", favoriteFruit);
+
+      // 4. let ile tanımladığınız değişkenin değerini güncelleyip tekrar konsola yazdırın.
+      favoriteColor = "green";
+      console.log("Updated Favorite Color (let):", favoriteColor);
+
+      // 5. const ile tanımladığınız değişkenin değerini güncelleyip ne olduğunu gözlemleyin.
+      try {
+        birthYear = 2000; // Bu satır hata verecektir çünkü const ile tanımlanan değişkenlerin değeri değiştirilemez.
+      } catch (error) {
+        console.log("Birth Year (const) update attempt error:", error.message);
+      }
+    </script>
+  </body>
+</html>
