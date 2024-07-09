@@ -7,6 +7,7 @@
   </head>
   <body>
     <script>
+      //PRATİK 1 VARIABLES/OPERATORS
       // 1. let anahtar kelimesi ile bir değişken tanımlayın ve ona favori renginizi atayın. Bu değişkeni konsola yazdırın.
       let favoriteColor = "blue";
       console.log("Favorite Color (let):", favoriteColor);
@@ -18,7 +19,7 @@
       // 3. var anahtar kelimesi ile bir değişken tanımlayın ve ona favori meyvenizi atayın. Bu değişkeni konsola yazdırın.
       var favoriteFruit = "strawberry";
       console.log("Favorite Fruit (var):", favoriteFruit);
-
+     
       // 4. let ile tanımladığınız değişkenin değerini güncelleyip tekrar konsola yazdırın.
       favoriteColor = "green";
       console.log("Updated Favorite Color (let):", favoriteColor);
@@ -29,6 +30,68 @@
       } catch (error) {
         console.log("Birth Year (const) update attempt error:", error.message);
       }
+
+
+
+
+       //PRATİK 2 - DATA TYPES/ FUNCTIONS
+      // Number veri türünden bir örnek
+      let numberExample = 42;
+      console.log("Number:", numberExample);
+
+      // String veri türünden bir örnek
+      let stringExample = "Hello, World!";
+      console.log("String:", stringExample);
+
+      // Boolean veri türünden bir örnek
+      let booleanExample = true;
+      console.log("Boolean:", booleanExample);
+
+      // Null veri türünden bir örnek
+      let nullExample = null;
+      console.log("Null:", nullExample);
+
+      // Undefined veri türünden bir örnek
+      let undefinedExample;
+      console.log("Undefined:", undefinedExample);
+
+      // Symbol veri türünden bir örnek
+      let symbolExample = Symbol("example");
+      console.log("Symbol:", symbolExample);
+
+      // BigInt veri türünden bir örnek
+      let bigIntExample = BigInt(12345678901234567890);
+      console.log("BigInt:", bigIntExample);
+
+      // Object oluşturun
+      let objectExample = {
+        name: "Ceylan",
+        age: 27,
+        isStudent: true,
+      };
+      console.log("Object:", objectExample);
+      console.log("Object name:", objectExample.name);
+      console.log("Object age:", objectExample.age);
+      console.log("Object isStudent:", objectExample.isStudent);
+
+      // Array oluşturun
+      let arrayExample = [
+        1,
+        "apple",
+        true,
+        null,
+        undefined,
+        Symbol("example"),
+        BigInt(123),
+      ];
+      console.log("Array:", arrayExample);
+      console.log("Array element 0:", arrayExample[0]);
+      console.log("Array element 1:", arrayExample[1]);
+      console.log("Array element 2:", arrayExample[2]);
+      console.log("Array element 3:", arrayExample[3]);
+      console.log("Array element 4:", arrayExample[4]);
+      console.log("Array element 5:", arrayExample[5]);
+      console.log("Array element 6:", arrayExample[6]);
     </script>
   </body>
 </html>
