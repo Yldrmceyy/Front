@@ -19,7 +19,7 @@
       // 3. var anahtar kelimesi ile bir değişken tanımlayın ve ona favori meyvenizi atayın. Bu değişkeni konsola yazdırın.
       var favoriteFruit = "strawberry";
       console.log("Favorite Fruit (var):", favoriteFruit);
-     
+
       // 4. let ile tanımladığınız değişkenin değerini güncelleyip tekrar konsola yazdırın.
       favoriteColor = "green";
       console.log("Updated Favorite Color (let):", favoriteColor);
@@ -31,10 +31,7 @@
         console.log("Birth Year (const) update attempt error:", error.message);
       }
 
-
-
-
-       //PRATİK 2 - DATA TYPES/ FUNCTIONS
+      //PRATİK 2 - DATA TYPES/ FUNCTIONS
       // Number veri türünden bir örnek
       let numberExample = 42;
       console.log("Number:", numberExample);
@@ -92,6 +89,40 @@
       console.log("Array element 4:", arrayExample[4]);
       console.log("Array element 5:", arrayExample[5]);
       console.log("Array element 6:", arrayExample[6]);
+
+      //PRATİK3-FONKSİYON
+      // 1. İki sayının toplamını döndüren bir fonksiyon tanımlayın ve bu fonksiyonu çağırarak sonucu konsola yazdırın.
+
+      function sum(a, b) {
+        return a + b;
+      }
+      console.log("Sum:", sum(5, 2));
+
+      //2. Bir sayının karesini hesaplayan bir fonksiyon ifadesi tanımlayın ve bu fonksiyonu çağırarak sonucu konsola yazdırın.
+      let square = function (x) {
+        return x * x;
+      };
+      console.log("Square:", square(4));
+
+      // 3. İki sayıyı bölen ve sonucu döndüren bir arrow fonksiyonu tanımlayın ve bu fonksiyonu çağırarak sonucu konsola yazdırın.
+      let division = (a, b) => {
+        return a / b;
+      };
+      console.log("Division:", division(18, 3));
+
+      //PRATİK3-NESNELER
+
+      const car={
+        brand:"Mercedes",
+        model:"C-180",
+        year:2022,
+        color:"white",
+
+        getDetails: function(){
+          return `The brand of this car is ${this.brand}, the model is ${this.model},the year is ${this.year}, and the color is ${this.color}`
+        }
+      };
+      console.log(car.getDetails());
     </script>
   </body>
 </html>
