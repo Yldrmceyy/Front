@@ -139,7 +139,7 @@
         console.log(num);
       });
 
-      //PRATİK5 - Conditional Statements / Loops (Döngüler / Koşul İfadeleri4
+      //PRATİK5 - Conditional Statements / Loops (Döngüler / Koşul İfadeleri)
       //Bir age değişkeni tanımlayın ve bu değişkenin değerine göre "Child", "Teenager", "Adult" mesajlarını konsola yazdırın. (if-else)
       const age = 25;
       if (age >= 0 && age <= 12) {
@@ -157,29 +157,49 @@
 
       switch (day) {
         case 0:
-        console.log("Sunday");
-        break;
-    case 1:
-        console.log("Monday");
-        break;
-    case 2:
-        console.log("Tuesday");
-        break;
-    case 3:
-        console.log("Wednesday");
-        break;
-    case 4:
-        console.log("Thursday");
-        break;
-    case 5:
-        console.log("Friday");
-        break;
-    case 6:
-        console.log("Saturday");
-        break;
-    default:
-        console.log("Invalid day");
+          console.log("Sunday");
+          break;
+        case 1:
+          console.log("Monday");
+          break;
+        case 2:
+          console.log("Tuesday");
+          break;
+        case 3:
+          console.log("Wednesday");
+          break;
+        case 4:
+          console.log("Thursday");
+          break;
+        case 5:
+          console.log("Friday");
+          break;
+        case 6:
+          console.log("Saturday");
+          break;
+        default:
+          console.log("Invalid day");
       }
+
+      //for döngüsü kullanarak 1'den 10'a kadar olan sayıları konsola yazdırın.
+
+      for (let i = 1; i <= 10; i++) {
+        console.log(i);
+      }
+      //while döngüsü kullanarak 10'dan 1'e kadar olan sayıları konsola yazdırın.
+      let j = 10;
+      while (j >= 1) {
+        console.log(j);
+        j--;
+      }
+      //do...while döngüsü kullanarak bir dizideki tüm elemanları konsola yazdırın.
+      const arr = [1, 2, 3, 4, 5];
+      let k = 0;
+
+      do {
+        console.log(arr[k]);
+        k++;
+      } while (k < arr.length);
     </script>
   </body>
 </html>
