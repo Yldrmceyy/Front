@@ -138,6 +138,48 @@
       numbers.forEach(function (num) {
         console.log(num);
       });
+
+      //PRATİK5 - Conditional Statements / Loops (Döngüler / Koşul İfadeleri4
+      //Bir age değişkeni tanımlayın ve bu değişkenin değerine göre "Child", "Teenager", "Adult" mesajlarını konsola yazdırın. (if-else)
+      const age = 25;
+      if (age >= 0 && age <= 12) {
+        console.log("Child çocuk👧🏽");
+      } else if (age >= 13 && age <= 19) {
+        console.log("Teenager👩🏽");
+      } else if (age >= 20) {
+        console.log("Adult 👩🏽‍🦱");
+      } else {
+        console.log("Invalid age");
+      }
+
+      //Bir day değişkeni tanımlayın ve bu değişkenin değerine göre haftanın gününü konsola yazdırın. (switch)
+      const day = 3;
+
+      switch (day) {
+        case 0:
+        console.log("Sunday");
+        break;
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    default:
+        console.log("Invalid day");
+      }
     </script>
   </body>
 </html>
