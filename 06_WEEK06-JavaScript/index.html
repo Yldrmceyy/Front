@@ -110,19 +110,34 @@
       };
       console.log("Division:", division(18, 3));
 
-      //PRATİK3-NESNELER
+      //PRATİK 4 - OBJECTS
+      const car = {
+        brand: "Mercedes",
+        model: "C-180",
+        year: 2022,
+        color: "white",
 
-      const car={
-        brand:"Mercedes",
-        model:"C-180",
-        year:2022,
-        color:"white",
-
-        getDetails: function(){
-          return `The brand of this car is ${this.brand}, the model is ${this.model},the year is ${this.year}, and the color is ${this.color}`
-        }
+        getDetails: function () {
+          return `The brand of this car is ${this.brand}, the model is ${this.model},the year is ${this.year}, and the color is ${this.color}`;
+        },
       };
       console.log(car.getDetails());
+
+      //PRATİK 4 - ARRAYS
+      // 1. Bir numbers dizisi oluşturun ve bu diziye 5 sayı ekleyin.
+      // 2. numbers dizisine bir sayı ekleyin ve dizinin son elemanını silin.
+      // 3. numbers dizisindeki elemanları for döngüsü ve forEach metodu kullanarak konsola yazdırın.
+      const numbers = [1, 2, 3, 4, 5];
+      numbers.push(6);
+      console.log(numbers);
+
+      for (let i = 0; i < numbers.length; i++) {
+        console.log(numbers[i]);
+      }
+
+      numbers.forEach(function (num) {
+        console.log(num);
+      });
     </script>
   </body>
 </html>
