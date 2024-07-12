@@ -11,8 +11,8 @@ body {
 
 img {
   margin-top: 20px;
-  width: 300px; /* Daha büyük bir boyut */
-  margin-bottom: 250px; /* Altındaki elementlerden uzaklık */
+  width: 300px;
+  margin-bottom: 200px; /* Altındaki elementlerden uzaklık */
 }
 
 .input-section {
