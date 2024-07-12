@@ -10,18 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const myClock = document.getElementById("myClock");
   const infoText = document.getElementById("infoText");
 
+  // Listening for click event on submit button
   submitNameButton.addEventListener("click", function () {
     const name = nameInput.value;
     if (name) {
       myNameSpan.textContent = name;
-      inputSection.style.display = "none"; //hide content and button divs
+      inputSection.style.display = "none"; // Hiding the input section
       greeting.style.display = "block";
       myClock.style.display = "block";
       infoText.style.display = "block";
       updateTime();
     }
   });
-
+  // Function to update the time
   function updateTime() {
     var date = new Date();
     var day = date.toLocaleDateString("tr-TR", {
@@ -39,5 +40,5 @@ document.addEventListener("DOMContentLoaded", function () {
     myClock.setAttribute("class", "clock");
     myClock.innerText = day + " " + time;
   }
-  setInterval(updateTime, 1000);
+  setInterval(updateTime, 1000); // Calling updateTime function every second to update the clock
 });
