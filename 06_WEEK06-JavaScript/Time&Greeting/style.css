@@ -1,0 +1,65 @@
+body {
+  background: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+img {
+  margin-top: 20px;
+  width: 300px; /* Daha büyük bir boyut */
+  margin-bottom: 250px; /* Altındaki elementlerden uzaklık */
+}
+
+.input-section {
+  width: 300px; 
+  margin-bottom: 450px;
+}
+
+.transparent-bg {
+  background-color: rgba(255, 255, 255, 0.5); 
+  padding-top: 40px; 
+  padding-bottom: 40px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px; 
+}
+
+.input-section input,
+.input-section button {
+  width: 100%;
+  padding:8px;
+  font-size: 16px;
+}
+
+.input-section button {
+  margin-top: 10px;
+}
+
+.clock {
+  color: #e98208;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 7px;
+  margin-top: 20px;
+}
+
+.text1 {
+  color: #e98208;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 7px;
+  margin-top: 20px;
+}
+
+.text2 {
+  color: #e98208;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 7px;
+  margin: 20px 100px; /* Sağ ve sol kenarlardan uzaklık */
+}
