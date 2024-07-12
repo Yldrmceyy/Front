@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,26 +12,38 @@
       crossorigin="anonymous"
     />
     <title>Kodluyoruz Javascript Saat Ödevi</title>
-</head>
-<body class="bg-dark">
+  </head>
+  <body class="bg-dark">
     <div class="text-center">
-        <img
-            src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
-            alt=""
-            class="rounded"
+      <img
+        src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+        alt=""
+        class="rounded"
+      />
+      <div class="input-section transparent-bg">
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="İsminizi girin..."
+          class="form-control"
         />
-        <div class="input-section transparent-bg ">
-            <input type="text" id="nameInput" placeholder="İsminizi girin..." class="form-control" />
-            <button id="submitName" class="btn btn-warning mt-3">Giriş Yap</button>
-        </div>
-        <div id="greeting" class="text1 text-center mt-5" style="display: none;">
-            Merhaba, <strong><span id="myName"></span></strong>! Hoş geldin!
-        </div>
-        <div id="myClock" class="clock mt-3" style="display: none;"></div>
-        <div class="text2 text-center mt-3" style="display: none;" id="infoText">
-            tarihinde <strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın Javascript bölümü 1. Ödevindesiniz.
-        </div>
+        <button id="submitName" class="btn btn-warning mt-3">Giriş Yap</button>
+      </div>
+
+      <div id="greeting" class="text1 text-center mt-5" style="display: none">
+        Merhaba, <strong><span id="myName"></span></strong>! Hoş geldin!
+      </div>
+
+      <div id="myClock" class="clock mt-3" style="display: none"> 
+      </div>
+
+      <div class="text2 text-center mt-3" style="display: none" id="infoText">
+        tarihinde
+        <strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın
+        Javascript bölümü 1. Ödevindesiniz.
+      </div>
+    
     </div>
-    <script src="js/clock.js"></script>
-</body>
+    <script src="clock.js"></script>
+  </body>
 </html>
