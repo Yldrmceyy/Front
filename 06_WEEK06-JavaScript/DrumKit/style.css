@@ -1,17 +1,16 @@
-body{
-    margin: 0; /* Varsayılan kenar boşluklarını sıfırla */
-    padding: 0; /* Varsayılan iç boşlukları sıfırla */
-    height: 100vh; /* Tam yüksekliği kapla */
-   
-    align-items: center; /* Dikey ortalama */
-    justify-content: center; /* Yatay ortalama */
-    background: linear-gradient( #28b487, #7dd56f);
-
-
+body {
+  margin: 0; /* Varsayılan kenar boşluklarını sıfırla */
+  padding: 0; /* Varsayılan iç boşlukları sıfırla */
+  height: 100vh; /* Tam yüksekliği kapla */
+  flex-direction: column;
+  align-items: center; /* Dikey ortalama */
+  justify-content: center; /* Yatay ortalama */
+  background: linear-gradient(#28b487, #7dd56f);
 }
 h1 {
   font-family: "Poppins", sans-serif;
   color: rgb(255, 235, 59);
+  text-shadow: 2px 4px 4px rgb(0,6,0);
   word-spacing: 5px;
   letter-spacing: 3.5px;
   font-size: 90px;
@@ -20,13 +19,32 @@ h1 {
 }
 
 .bg-image {
-   position: absolute; /* Konumlandırma */
-    top:60%; /* Dikey ortalama */
-    left: 50%; /* Yatay ortalama */
-    transform: translate(-50%, -50%); /* Tam merkezlemek için */
-    opacity: 0.8; /* Opaklık ayarı */
+  position: absolute; /* Konumlandırma */
+  top: 60%; /* Dikey ortalama */
+  left: 50%; /* Yatay ortalama */
+  transform: translate(-50%, -50%); /* Tam merkezlemek için */
+  opacity: 0.9; /* Opaklık ayarı */
+  max-width: 700px; /* Maksimum genişlik ayarı */
+  height: auto; /* Yüksekliği otomatik ayarla */
+  z-index: -1; /* Resmi arka plana alır */
+}
+
+.container{
+    display: flex; /* Flexbox düzeni uygula */
+    flex-wrap: wrap;
+    flex-direction: row; /* Dikey sıralama */
+    align-items: center; /* Button'ları ortala */
+    justify-content: center; /* Yatay ortalama */
+    gap: 10px;
    
-    max-width: 700px; /* Maksimum genişlik ayarı */
-    height: auto; /* Yüksekliği otomatik ayarla */
-    z-index: 0; /* Resmi arka plana alır */
+}
+
+.btn{
+    padding:30px 50px;
+    margin :10px;
+    min-width: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0,0,00.3);
+    font-size: 30px;
 }
