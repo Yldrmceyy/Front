@@ -1,0 +1,32 @@
+body{
+    margin: 0; /* Varsayılan kenar boşluklarını sıfırla */
+    padding: 0; /* Varsayılan iç boşlukları sıfırla */
+    height: 100vh; /* Tam yüksekliği kapla */
+   
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+    background: linear-gradient( #28b487, #7dd56f);
+
+
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 235, 59);
+  word-spacing: 5px;
+  letter-spacing: 3.5px;
+  font-size: 90px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.bg-image {
+   position: absolute; /* Konumlandırma */
+    top:60%; /* Dikey ortalama */
+    left: 50%; /* Yatay ortalama */
+    transform: translate(-50%, -50%); /* Tam merkezlemek için */
+    opacity: 0.8; /* Opaklık ayarı */
+   
+    max-width: 700px; /* Maksimum genişlik ayarı */
+    height: auto; /* Yüksekliği otomatik ayarla */
+    z-index: 0; /* Resmi arka plana alır */
+}
