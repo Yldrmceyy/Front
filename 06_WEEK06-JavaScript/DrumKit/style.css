@@ -45,6 +45,15 @@ h1 {
     min-width: 200px;
     border: none;
     border-radius: 10px;
+   
     box-shadow: 0 4px 8px rgb(0,0,00.3);
     font-size: 30px;
+    text-transform: capitalize;
+    
+}
+.btn:hover{
+    color: rgb(255, 235, 59)
+}
+.btn:active{
+background-color:rgba(68, 68, 68, 0.6);
 }
