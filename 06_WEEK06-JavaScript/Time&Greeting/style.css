@@ -12,12 +12,12 @@ body {
 img {
   margin-top: 20px;
   width: 300px;
-  margin-bottom: 200px; /* Altındaki elementlerden uzaklık */
+  margin-bottom:100px; 
 }
 
 .input-section {
   width: 300px; 
-  margin-bottom: 450px;
+  margin-bottom: 300px;
 }
 
 .transparent-bg {
