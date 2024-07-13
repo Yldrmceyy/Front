@@ -22,23 +22,23 @@ document.addEventListener("DOMContentLoaded", function () {
       updateTime();
     }
   });
-  // Function to update the time
-  function updateTime() {
-    var date = new Date();
-    var day = date.toLocaleDateString("tr-TR", {
-      weekday: "long",
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-    });
-    var time = date.toLocaleTimeString("tr-TR", {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    });
+ // Function to update the time
+function updateTime() {
+  const date = new Date();
+  const day = date.toLocaleDateString("tr-TR", {
+    weekday: "long",
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+  });
+  const time = date.toLocaleTimeString("tr-TR", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
 
-    myClock.setAttribute("class", "clock");
-    myClock.innerText = day + " " + time;
-  }
-  setInterval(updateTime, 1000); // Calling updateTime function every second to update the clock
+  myClock.setAttribute("class", "clock");
+  myClock.innerText = `${day} ${time}`;
+}
+setInterval(updateTime, 1000); // Calling updateTime function every second to update the clock
 });
