@@ -13,5 +13,10 @@ kits.forEach((kit)=>{
     //created audio 
     const audioEl=document.createElement("audio");
     containerEl.appendChild(audioEl);
-    audioEl.src="sounds/" + kit + ".wav";
+    audioEl.src="./sounds/" + kit + ".wav";
+   
+    btnEl.addEventListener('click', ()=>{
+        audioEl.play();
+
+    })
 });
