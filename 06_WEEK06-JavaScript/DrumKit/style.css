@@ -36,16 +36,17 @@ h1 {
     align-items: center; /* Button'ları ortala */
     justify-content: center; /* Yatay ortalama */
     gap: 10px;
+    
    
 }
 
 .btn{
     padding:30px 50px;
-    margin :10px;
+    margin :50px 10px;
     min-width: 200px;
     border: none;
     border-radius: 10px;
-   
+   background-color: rgb(255,255,255,0.8);
     box-shadow: 0 4px 8px rgb(0,0,00.3);
     font-size: 30px;
     text-transform: capitalize;
