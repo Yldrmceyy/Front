@@ -5,6 +5,8 @@ This Drumkit project is a simple web-based application that allows users to play
 ## Demo
 You can try the live demo of the Drumkit project [here](https://drum-kitsss.netlify.app/).
 
+![Example Screenshot](./ss.jpg) 
+
 ## Features
 - Play drum sounds by clicking buttons or pressing keys.
 - Smooth animations for button clicks.
