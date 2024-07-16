@@ -7,6 +7,7 @@ You can try the live demo of the Drumkit project [here](https://drum-kitsss.netl
 
 ## Features
 - Play drum sounds by clicking buttons or pressing keys.
-- Smooth animations for button presses.
+- Smooth animations for button clicks.
+- Different animations for key presses.
 - Responsive design to ensure usability on different screen sizes.
 - Play sounds by pressing the first letter of each drum kit's name ("k" for kick, "o" for openhat, "s" for snare, "t" for tom).
