@@ -29,3 +29,26 @@ const getAllUsers = function () {
 //Bir API'ye yeni bir kullanıcı verisi gönderen bir fonksiyon yazın.
 //Veriyi göndermek için Fetch API kullanın.
 //Gönderim başarılı olduğunda sunucunun döndürdüğü yanıtı konsola yazdırın.
+
+const postUserData = function (userData) {
+    fetch('https://jsonplaceholder.typicode.com/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(userData)
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error:", error));
+  };
+  
+  // Örnek kullanım: Yeni bir kullanıcı verisi gönderme
+  const newUser = {
+    name: 'Ceylan Yıldırım',
+    username: 'yldrmceyy',
+    email: 'cey@example.com'
+  };
+  
+  postUserData(newUser);
+  
