@@ -13,6 +13,14 @@ const getUserData = function (userId) {
 getUserData(1);
 
 
+const getAllUsers = function () {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error:", error));
+  };
+  
+  getAllUsers();
 
 
 
