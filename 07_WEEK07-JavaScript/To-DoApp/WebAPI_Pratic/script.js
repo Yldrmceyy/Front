@@ -12,6 +12,10 @@ const getUserData = function (userId) {
 };
 getUserData(1);
 
+
+
+
+
 //2: Fetch API ile POST İsteği
 
 //Bir API'ye yeni bir kullanıcı verisi gönderen bir fonksiyon yazın.
