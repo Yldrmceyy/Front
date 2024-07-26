@@ -73,50 +73,53 @@ const menu = [
   },
 ];
 
-// DOM öğelerini seçme
+
+// Select DOM elements
 const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
 
+// Determine unique categories and add "all"
+const categories = ["all", ...new Set(menu.map((item) => item.category))];
 
-const categories = ['all', ...new Set(menu.map(item => item.category))];
-
+// Create category buttons
 btnContainer.innerHTML = categories
-  .map(category => {
-    return `<button class="btn btn-item" data-id="${category}">
-              ${category === 'all' ? 'All' : category}
+  .map((category) => {
+    return `<button class="btn btn-outline-dark btn-item" data-id="${category}">
+              ${category === "all" ? "All" : category}
             </button>`;
   })
-  .join('');
+  .join("");
 
-
-
-function displayMenuItems(menuItems) {
+// Function to display menu items
+const displayMenuItems = (menuItems) => {
   sectionCenter.innerHTML = menuItems
     .map((item) => {
-      return ` <div class="menu-items">
-                <img src="${item.img}" alt="${item.title}" class="photo">
-                <div class="menu-info">
-                  <div class="menu-title">
-                    <h4>${item.title}</h4>
-                    <h4 class="price">${item.price}</h4>
+      return `<div class="menu-items col-lg-6 col-sm-12">
+                  <img src="${item.img}" class="photo" alt="${item.title}">
+                  <div class="menu-info">
+                    <div class="menu-title">
+                      <h4>${item.title}</h4>
+                      <h4>${item.price.toFixed(2)}</h4>
+                    </div>
+                    <p class="menu-text">${item.desc}</p>
                   </div>
-                  <div class="menu-text">
-                    ${item.desc}
-                  </div>
-                </div>
-              </div>`;
+                </div>`;
     })
-    .join(" ");
-}
-//Menü Öğelerini Başlangıçta Gösterme
+    .join("");
+};
+
+// Show all menu items by default
 displayMenuItems(menu);
 
-btnContainer.addEventListener('click', (e) => {
+// Add click event listener to category buttons
+btnContainer.addEventListener("click", (e) => {
   const category = e.target.dataset.id;
   if (category) {
-    const filteredMenu = category === 'all'
-      ? menu
-      : menu.filter(item => item.category === category);
+    // Filter the menu items based on the selected category
+    const filteredMenu =
+      category === "all"
+        ? menu
+        : menu.filter((item) => item.category === category);
     displayMenuItems(filteredMenu);
   }
 });
