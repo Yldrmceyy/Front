@@ -110,3 +110,13 @@ function displayMenuItems(menuItems) {
 }
 //Menü Öğelerini Başlangıçta Gösterme
 displayMenuItems(menu);
+
+btnContainer.addEventListener('click', (e) => {
+  const category = e.target.dataset.id;
+  if (category) {
+    const filteredMenu = category === 'all'
+      ? menu
+      : menu.filter(item => item.category === category);
+    displayMenuItems(filteredMenu);
+  }
+});
