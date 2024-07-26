@@ -85,3 +85,23 @@ const menu = [
 // DOM öğelerini seçme
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
+
+
+function displayMenuItems(menuItems){
+  let displayMenu=menuItems.map(item =>{
+    return ` <div class="menu-items">
+                <img src="${item.img}" alt="${item.title}" class="photo">
+                <div class="menu-info">
+                  <div class="menu-title">
+                    <h4>${item.title}</h4>
+                    <h4 class="price">${item.price}</h4>
+                  </div>
+                  <div class="menu-text">
+                    ${item.desc}
+                  </div>
+                </div>
+              </div>`
+  })
+
+sectionCenter.innerHTML=displayMenu;
+}
