@@ -77,6 +77,19 @@ const menu = [
 const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
 
+
+const categories = ['all', ...new Set(menu.map(item => item.category))];
+
+btnContainer.innerHTML = categories
+  .map(category => {
+    return `<button class="btn btn-item" data-id="${category}">
+              ${category === 'all' ? 'All' : category}
+            </button>`;
+  })
+  .join('');
+
+
+
 function displayMenuItems(menuItems) {
   sectionCenter.innerHTML = menuItems
     .map((item) => {
@@ -95,3 +108,4 @@ function displayMenuItems(menuItems) {
     })
     .join(" ");
 }
+displayMenuItems(menu);
