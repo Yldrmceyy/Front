@@ -108,4 +108,5 @@ function displayMenuItems(menuItems) {
     })
     .join(" ");
 }
+//Menü Öğelerini Başlangıçta Gösterme
 displayMenuItems(menu);
