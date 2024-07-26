@@ -81,3 +81,7 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
+
+// DOM öğelerini seçme
+const sectionCenter = document.querySelector('.section-center');
+const btnContainer = document.querySelector('.btn-container');
