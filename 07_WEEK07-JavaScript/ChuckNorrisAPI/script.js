@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())  // Convert the response to JSON
             .then(data => {
                 // Display the joke in the joke element
-                jokeEl.textContent = data.value;
+                jokeEl.textContent =`"${data.value}"`;
             })
             .catch(error => {
                 // Handle any errors that occur during the fetch
