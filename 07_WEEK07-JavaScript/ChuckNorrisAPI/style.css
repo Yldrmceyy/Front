@@ -1,49 +1,45 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #cf9aff, #95c0ff);
+  margin: 0;
 }
 .container {
-    text-align: center;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    max-width: 600px;
-    width: 100%;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
 }
-
-
 
 .chuck-image {
-    max-width: 50%;
-    padding: 20px;
-   
-    
+  max-width: 50%;
+  padding-bottom: 40px;
 }
 .joke-text {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .button {
-    background-color: #FFC017;
-    border: none;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
+  background-color: #ffc017;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .button:hover {
-    background-color: #ea580c;
+  background-color: #ea580c;
 }
