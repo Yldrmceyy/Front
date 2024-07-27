@@ -2,7 +2,10 @@
 
 ## Overview
 This project is a simple web application that displays Chuck Norris jokes. It utilizes the Chuck Norris Joke API to fetch random jokes and allows users to get a new joke by clicking a button. The application is built using HTML, CSS, and JavaScript.
+## Demo
+You can try the live demo of the ChuckNorris API project [here](https://chuck-norriss-api.netlify.app/).
 
+![Example Screenshot](./ss.jpg)
 ## Features
 - Displays a random Chuck Norris joke on page load.
 - Allows users to fetch a new joke by clicking a button.
