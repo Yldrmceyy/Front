@@ -12,7 +12,15 @@ body {
   color: var(--font-color-1);
   background-color: var(--background-color-1);
 }
+p {
+  color: var(--font-color-2);
+  line-height: 1.45;
+}
 
+p span{
+    color: var(--font-color-1);
+    line-height: 1.45;
+}
 .section {
   padding: 80px 0;
   background-color: var(--background-color-1);
@@ -42,8 +50,8 @@ body {
 }
 
 .section .section-title h4 span {
-    color: var(--font-color-1);
-  }
+  color: var(--font-color-1);
+}
 
 .section .section-content {
   position: relative;
