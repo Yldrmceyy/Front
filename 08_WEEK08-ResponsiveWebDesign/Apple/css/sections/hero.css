@@ -22,12 +22,14 @@
   letter-spacing: -0.5px;
   transform: translateX(-50%);
 }
+
 #hero .hero-bottom {
   position: absolute;
   left: 50%;
   bottom: 115px;
   transform: translateX(-50%);
 }
+
 #hero .hero-bottom h5 {
   display: block;
   text-align: center;
@@ -39,4 +41,28 @@
   padding: 6px 24px;
   letter-spacing: 1px;
   border-radius: var(--bs-border-radius-pill);
+}
+
+@media (max-width: 1399.98px) {
+  #hero h1 {
+    top: 200px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #hero {
+    height: 90vh;
+  }
+
+  #hero h1 {
+    top: 100px;
+  }
+
+  #hero .hero-bottom {
+    width: 100%;
+    left: 0;
+    bottom: 75px;
+    transform: none;
+    text-align: center;
+  }
 }
