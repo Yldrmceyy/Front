@@ -1,36 +1,39 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 
-
-import './App.css'
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [userName, setUserName] = useState('Player 1');
-  const [userDice, setUserDice] = useState(1);
-  const [pcDice, setPcDice] = useState(1);
-  const [result, setResult] = useState('');
+  const [userName, setUserName] = useState("Player 1");
+  const [userDice, setUserDice] = useState("dice1.png");
+  const [pcDice, setPcDice] = useState("dice1.png");
+  const [result, setResult] = useState("");
   const [rolling, setRolling] = useState(false);
-  const [newName, setNewName] = useState('');
+  const [newName, setNewName] = useState("");
 
   const rollDice = () => {
     setRolling(true);
     let rollInterval = setInterval(() => {
-      setUserDice(Math.floor(Math.random() * 6) + 1);
-      setPcDice(Math.floor(Math.random() * 6) + 1);
+      const userRoll = Math.floor(Math.random() * 6) + 1;
+      const pcRoll = Math.floor(Math.random() * 6) + 1;
+      setUserDice(`dice${userRoll}.png`);
+      setPcDice(`dice${pcRoll}.png`);
     }, 100);
 
     setTimeout(() => {
       clearInterval(rollInterval);
       const userRoll = Math.floor(Math.random() * 6) + 1;
       const pcRoll = Math.floor(Math.random() * 6) + 1;
-      setUserDice(userRoll);
-      setPcDice(pcRoll);
+      setUserDice(`dice${userRoll}.png`);
+      setPcDice(`dice${pcRoll}.png`);
 
       if (userRoll > pcRoll) {
         setResult(`${userName} Kazandı!`);
       } else if (userRoll < pcRoll) {
-        setResult('Bilgisayar Kazandı!');
+        setResult("Bilgisayar Kazandı!");
       } else {
-        setResult('Berabere!');
+        setResult("Berabere!");
       }
       setRolling(false);
     }, 3000);
@@ -42,9 +45,9 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (newName.trim() !== '') {
+    if (newName.trim() !== "") {
       setUserName(newName);
-      setNewName('');
+      setNewName("");
     }
   };
 
@@ -65,14 +68,14 @@ function App() {
       <div className="players">
         <div className="player">
           <h2>{userName}</h2>
-          <div className={`dice dice-${userDice}`}>
-            <img src={`./images/dice${userDice}.png`} alt={`Dice ${userDice}`} />
+          <div className="dice">
+            <img src={`/src/assets/${userDice}`} alt={`Dice ${userDice}`} />
           </div>
         </div>
         <div className="player">
           <h2>Bilgisayar</h2>
-          <div className={`dice dice-${pcDice}`}>
-            <img src={`./images/dice${pcDice}.png`} alt={`Dice ${pcDice}`} />
+          <div className="dice">
+            <img src={`/src/assets/${pcDice}`} alt={`Dice ${pcDice}`} />
           </div>
         </div>
       </div>
@@ -82,8 +85,9 @@ function App() {
       </div>
 
       <button onClick={rollDice} disabled={rolling}>
-        {rolling ? 'Zarlar Atılıyor...' : 'Zarları At'}
+        {rolling ? "Zarlar Atılıyor..." : "Zarları At"}
       </button>
+      <footer className="footer">www 🎲 Dice Game 🎲 com</footer>
     </div>
   );
 }
