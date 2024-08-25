@@ -100,20 +100,7 @@ function App() {
         p.name === product.name ? { ...p, quantity: p.quantity + 1 } : p
       );
       setProducts(newProducts);
-
-      let remainingAmount = product.price;
-
-      const interval = setInterval(() => {
-        setBalance((prevBalance) => {
-          if (remainingAmount > 0) {
-            remainingAmount -= 1;
-            return prevBalance - 1;
-          } else {
-            clearInterval(interval);
-            return prevBalance;
-          }
-        });
-      }, 100 / product.price);
+      setBalance(balance - product.price);
     }
   };
 
