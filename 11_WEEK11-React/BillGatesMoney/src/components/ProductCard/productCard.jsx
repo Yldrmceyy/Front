@@ -15,7 +15,9 @@ function ProductCard({ product, onBuy, onSell }) {
         >
           Sell
         </button>
+
         <input type="number" value={product.quantity} readOnly />
+
         <button
           onClick={() => onBuy(product)}
           disabled={product.price > product.balance}

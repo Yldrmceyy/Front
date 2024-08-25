@@ -74,11 +74,11 @@
 
 /* Specific styling for the Sell button */
 .product-card button:first-of-type {
-    background: linear-gradient(to bottom, #ccc, #ccc); /* Initial gray color */
+    background: linear-gradient(to bottom, #ccc, #ccc); 
 }
 
 .product-card button:first-of-type:enabled {
-    background: linear-gradient(to bottom, #e85eca, #e432d5); /* Pink color when enabled */
+    background: linear-gradient(to bottom, #e85eca, #e432d5); 
 }
 
 /* Specific styling for the Buy button */

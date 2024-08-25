@@ -4,7 +4,6 @@ import Balance from "./components/Balance/Balance";
 import Receipt from "./components/Receipt/Receipt";
 import "./App.css";
 
-
 function App() {
   const [balance, setBalance] = useState(100000000000);
   const [products, setProducts] = useState([
@@ -75,6 +74,24 @@ function App() {
       price: 299,
       quantity: 0,
     },
+    {
+      img: "../public/image/mona-lisa.jpg",
+      name: "Mona Lisa",
+      price: 780000000,
+      quantity: 0,
+    },
+    {
+      img: "../public/image/mansion.jpg",
+      name: "Mansion",
+      price: 450000000,
+      quantity: 0,
+    },
+    {
+      img: "../public/image/nba-team.jpg",
+      name: "NBA Team",
+      price: 2120000000,
+      quantity: 0,
+    },
   ]);
 
   const handleBuy = (product) => {
@@ -83,7 +100,20 @@ function App() {
         p.name === product.name ? { ...p, quantity: p.quantity + 1 } : p
       );
       setProducts(newProducts);
-      setBalance(balance - product.price);
+
+      let remainingAmount = product.price;
+
+      const interval = setInterval(() => {
+        setBalance((prevBalance) => {
+          if (remainingAmount > 0) {
+            remainingAmount -= 1;
+            return prevBalance - 1;
+          } else {
+            clearInterval(interval);
+            return prevBalance;
+          }
+        });
+      }, 100 / product.price);
     }
   };
 
@@ -108,7 +138,7 @@ function App() {
         {products.map((product) => (
           <ProductCard
             key={product.name}
-            product={{ ...product, balance }}
+            product={{ ...product }}
             onBuy={handleBuy}
             onSell={handleSell}
           />
