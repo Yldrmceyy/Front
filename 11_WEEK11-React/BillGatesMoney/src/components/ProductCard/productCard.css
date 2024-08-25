@@ -1,10 +1,9 @@
 .product-list {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     margin-top: 20px;
     justify-items: center;
-    
 }
 
 /* Product Card Styles */
@@ -21,7 +20,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 400px; 
-   
 }
 
 .product-card h2 {
@@ -76,7 +74,11 @@
 
 /* Specific styling for the Sell button */
 .product-card button:first-of-type {
-    background-color: #c74c89; 
+    background: linear-gradient(to bottom, #ccc, #ccc); /* Initial gray color */
+}
+
+.product-card button:first-of-type:enabled {
+    background: linear-gradient(to bottom, #e85eca, #e432d5); /* Pink color when enabled */
 }
 
 /* Specific styling for the Buy button */
@@ -95,5 +97,5 @@
     height: 40px;
     border: 0.1em solid rgb(81, 81, 81);
     background-color: white;
-    text-align: center; 
+    text-align:center; 
 }
