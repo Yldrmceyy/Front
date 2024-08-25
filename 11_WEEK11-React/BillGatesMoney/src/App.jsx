@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProductCard from "./components/ProductCard/ProductCard";
+import ProductCard from "./components/ProductCard/productCard";
 import Balance from "./components/Balance/Balance";
 import Receipt from "./components/Receipt/Receipt";
 import "./App.css";
