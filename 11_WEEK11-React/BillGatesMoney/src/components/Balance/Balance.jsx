@@ -1,8 +1,10 @@
 
+import './Balance.css';
 
+// eslint-disable-next-line react/prop-types
 function Balance({ balance }) {
   return (
-    <div>
+    <div className="balance">
       <h1>${balance.toLocaleString()}</h1>
     </div>
   );

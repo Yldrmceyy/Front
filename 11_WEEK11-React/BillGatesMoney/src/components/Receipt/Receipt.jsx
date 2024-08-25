@@ -1,4 +1,5 @@
 import React from 'react';
+import './Receipt.css';
 
 function Receipt({ products }) {
   const total = products.reduce((sum, product) => sum + (product.price * product.quantity), 0);

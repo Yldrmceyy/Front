@@ -1,0 +1,88 @@
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+/* Product Card Styles */
+.product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* Adjust this value as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 0; /* Remove any margin to reduce space */
+    padding-bottom: 5px; /* Use padding if needed */
+    height: auto; /* Adjust height to content */
+}
+
+.product-card p {
+    margin: 0; /* Remove margin to minimize spacing */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-card img {
+    width: 100%; /* Make image take full width of its container */
+    height: auto;
+    max-height: 150px; /* Ensure all images have the same height */
+    object-fit: contain; /* Preserve aspect ratio, and fit within max height */
+    margin-bottom: 10px;
+}
+
+.product-card .row {
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+    margin-top: 1rem;
+}
+
+.product-card button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 80px; /* Consistent button width */
+}
+
+/* Specific styling for the Sell button */
+.product-card button:first-of-type {
+    background-color: #ff69b4; /* Pink color for Sell button */
+}
+
+/* Specific styling for the Buy button */
+.product-card button:last-of-type {
+    background: linear-gradient(to bottom, #2cca77, #1dbf95); /* Green color for Buy button */
+}
+
+/* Disabled button styling */
+.product-card button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.product-card input {
+    width: 7vw;
+    height: 85%;
+    border: 0.1em solid rgb(81, 81, 81);
+    background-color: white;
+}
