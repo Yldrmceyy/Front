@@ -1,8 +1,20 @@
-# React + Vite
+# Spend Bill Gates' Money Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a clone of the "Spend Bill Gates' Money" game, where you spend Bill Gates' $100,000,000,000 on various imaginary products.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product List:** Display a list of imaginary products with their prices.
+- **Starting Balance:** The initial balance should be $100,000,000,000.
+- **Buying Products:** When a product is purchased, the balance should decrease.
+- **Selling Products:** When a product is sold, the balance should increase.
+- **Button Availability:**
+  - The "Sell" button should be disabled if the product quantity is zero.
+  - The "Buy" button should be disabled if the product price is higher than the available balance.
+- **Receipt:** Display purchased products at the bottom of the screen, showing the quantity and total cost.
+
+## Usage
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/project-name.git
