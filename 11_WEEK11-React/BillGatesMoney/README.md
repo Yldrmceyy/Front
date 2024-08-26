@@ -13,8 +13,3 @@ This project is a clone of the "Spend Bill Gates' Money" game, where you spend B
   - The "Buy" button should be disabled if the product price is higher than the available balance.
 - **Receipt:** Display purchased products at the bottom of the screen, showing the quantity and total cost.
 
-## Usage
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/project-name.git
