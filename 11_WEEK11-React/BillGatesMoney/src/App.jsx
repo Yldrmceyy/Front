@@ -94,13 +94,37 @@ function App() {
     },
   ]);
 
+
+  const updateBalance = (amount, isIncrement) => {
+    const intervalTime = amount > 1000 ? 10 : 50;
+    const stepAmount = amount / 10;
+
+    const interval = setInterval(() => {
+      setBalance((prevBalance) => {
+        const newBalance = isIncrement
+          ? prevBalance + stepAmount
+          : prevBalance - stepAmount;
+
+        if (
+          (isIncrement && newBalance >= balance + amount) ||
+          (!isIncrement && newBalance <= balance - amount)
+        ) {
+          clearInterval(interval);
+          return isIncrement ? balance + amount : balance - amount;
+        }
+
+        return newBalance;
+      });
+    }, intervalTime);
+  };
+
   const handleBuy = (product) => {
     if (balance >= product.price) {
       const newProducts = products.map((p) =>
         p.name === product.name ? { ...p, quantity: p.quantity + 1 } : p
       );
       setProducts(newProducts);
-      setBalance(balance - product.price);
+      updateBalance(product.price, false);
     }
   };
 
@@ -110,9 +134,10 @@ function App() {
         p.name === product.name ? { ...p, quantity: p.quantity - 1 } : p
       );
       setProducts(newProducts);
-      setBalance(balance + product.price);
+      updateBalance(product.price, true);
     }
   };
+
 
   return (
     <div className="App">
