@@ -69,13 +69,13 @@ function App() {
         <div className="player">
           <h2>{userName}</h2>
           <div className="dice">
-            <img src={`./assets/${userDice}`} alt={`Dice ${userDice}`} />
+            <img src={`./image/${userDice}`} alt={`Dice ${userDice}`} />
           </div>
         </div>
         <div className="player">
           <h2>Bilgisayar</h2>
           <div className="dice">
-            <img src={`./assets/${pcDice}`} alt={`Dice ${pcDice}`} />
+            <img src={`./image/${pcDice}`} alt={`Dice ${pcDice}`} />
           </div>
         </div>
       </div>
