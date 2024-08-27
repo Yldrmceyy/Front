@@ -13,3 +13,4 @@ This project is a clone of the "Spend Bill Gates' Money" game, where you spend B
   - The "Buy" button should be disabled if the product price is higher than the available balance.
 - **Receipt:** Display purchased products at the bottom of the screen, showing the quantity and total cost.
 
+[Live Project](https://billgates-moneyy.netlify.app/)
