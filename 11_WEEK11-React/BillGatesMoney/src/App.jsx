@@ -94,7 +94,7 @@ function App() {
     },
 
 
-    
+
   ]);
 
 
@@ -147,7 +147,7 @@ function App() {
   return (
     <div className="App">
       <div className="Header">
-        <h1>Spend Bill Gates' Money</h1>
+        <h1>Spend Bill Gates Money</h1>
         <img src="../public/image/billgates.jpg" />
       </div>
       <Balance balance={balance} />
