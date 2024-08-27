@@ -92,7 +92,12 @@ function App() {
       price: 2120000000,
       quantity: 0,
     },
+
+
+    
   ]);
+
+
 
 
   const updateBalance = (amount, isIncrement) => {
