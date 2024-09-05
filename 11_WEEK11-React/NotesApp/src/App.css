@@ -36,12 +36,10 @@ input[type="text"] {
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s, border 0.2s; /* Geçiş efektleri */
+  transition: transform 0.2s, border 0.2s; 
 }
 
-.color-picker button:hover {
-  transform: scale(1.2); /* Üzerine gelindiğinde büyüme */
-}
+
 
 .color-picker .selected {
   border: 2px solid rgb(94, 94, 94); 
