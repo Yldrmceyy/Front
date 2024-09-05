@@ -1,56 +1,46 @@
 import React, { useState } from "react";
 
 function NoteInput({ onAddNote }) {
-  const [noteText, setNoteText] = useState(""); // Not metni
-  const [selectedColor, setSelectedColor] = useState("yellow"); // Seçilen renk
+  const [noteText, setNoteText] = useState("");  // Not metni
+  const [selectedColor, setSelectedColor] = useState("yellow");  // Seçilen renk
 
-  // Not ekleme işlevi
+  // Not ekleme işlemi
   const handleAddNote = () => {
-    if (noteText.trim()) {
-      onAddNote({ text: noteText, color: selectedColor }); // Not ve renk obje olarak aktarılır
-      setNoteText(""); // Not eklendikten sonra input sıfırlanır
+    if (noteText.trim()) {  // Not metni boş değilse
+      onAddNote({ text: noteText, color: selectedColor });
+      setNoteText("");  // Not eklendikten sonra metni sıfırlama
     }
   };
 
   return (
     <div className="note-input">
-      {/* Not metni girişi */}
       <textarea
         placeholder="Enter your note here..."
         value={noteText}
-        onChange={(e) => setNoteText(e.target.value)} // Textarea'deki değişikliği kaydeder
+        onChange={(e) => setNoteText(e.target.value)}
       />
-
-      {/* Renk seçme butonları */}
       <div className="color-picker">
         <button
-          className={`color-button ${selectedColor === "pink" ? "selected" : ""}`}
-          style={{ backgroundColor: "pink" }}
+          className={`color-button color-pink ${selectedColor === "pink" ? "selected" : ""}`}
           onClick={() => setSelectedColor("pink")}
         />
         <button
-          className={`color-button ${selectedColor === "purple" ? "selected" : ""}`}
-          style={{ backgroundColor: "purple" }}
+          className={`color-button color-purple ${selectedColor === "purple" ? "selected" : ""}`}
           onClick={() => setSelectedColor("purple")}
         />
         <button
-          className={`color-button ${selectedColor === "yellow" ? "selected" : ""}`}
-          style={{ backgroundColor: "yellow" }}
+          className={`color-button color-yellow ${selectedColor === "yellow" ? "selected" : ""}`}
           onClick={() => setSelectedColor("yellow")}
         />
         <button
-          className={`color-button ${selectedColor === "blue" ? "selected" : ""}`}
-          style={{ backgroundColor: "blue" }}
+          className={`color-button color-blue ${selectedColor === "blue" ? "selected" : ""}`}
           onClick={() => setSelectedColor("blue")}
         />
         <button
-          className={`color-button ${selectedColor === "green" ? "selected" : ""}`}
-          style={{ backgroundColor: "green" }}
+          className={`color-button color-green ${selectedColor === "green" ? "selected" : ""}`}
           onClick={() => setSelectedColor("green")}
         />
       </div>
-
-      {/* Add butonu */}
       <button className="add-button" onClick={handleAddNote}>
         Add
       </button>
