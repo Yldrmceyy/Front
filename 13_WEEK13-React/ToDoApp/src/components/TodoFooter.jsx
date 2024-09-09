@@ -1,9 +1,19 @@
+// src/components/TodoFooter.js
+import React from "react";
 
+function TodoFooter({ todos, clearCompleted }) {
+  const remaining = todos.filter(todo => !todo.completed).length;
 
-function TodoFooter() {
   return (
-    <div>TodoFooter</div>
-  )
+    <footer className="footer">
+      <span className="todo-count">
+        {remaining} görev kaldı
+      </span>
+      <button className="clear-completed" onClick={clearCompleted}>
+        Tamamlananları Temizle
+      </button>
+    </footer>
+  );
 }
 
-export default TodoFooter
+export default TodoFooter;

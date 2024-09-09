@@ -1,19 +1,27 @@
 import { useState } from "react";
 
-function TodoHeader({ addToDo }) {
+function TodoHeader({ addTodo }) {
   const [text, setText] = useState("");
 
-  return (
-    <header className="header">
-      <h1>Yapıacaklar Listesi</h1>
-      <form >
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (text.trim()) {
+      addTodo(text);
+    }
+  };
 
+
+
+  return (
+    <header className="todoapp">
+      <h1>Yapılacaklar Listesi</h1>
+      <form onSubmit={handleSubmit} >
         <input
-            className="new-todo"
-            value="text"
-            onChange={(e) => setText(e.target.value)}
-            placeholder="Yeni görev yazınız"
-            autoFocus
+          className="new-todo"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder="Yeni görev yazınız"
+          autoFocus
         />
       </form>
     </header>
