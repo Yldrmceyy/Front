@@ -14,7 +14,7 @@ function TodoHeader({ addTodo }) {
 
   return (
     <header className="todoapp">
-      <h1>Yapılacaklar Listesi</h1>
+      <h1>todos</h1>
       <form onSubmit={handleSubmit} >
         <input
           className="new-todo"
