@@ -10,12 +10,10 @@ function TodoHeader({ addTodo }) {
     }
   };
 
-
-
   return (
     <header className="todoapp">
       <h1>todos</h1>
-      <form onSubmit={handleSubmit} >
+      <form onSubmit={handleSubmit}>
         <input
           className="new-todo"
           value={text}
