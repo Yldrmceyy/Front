@@ -1,24 +1,23 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
-import HomePage from "./pages/HomePage";
-import DetailPage from "./pages/DetailPage";
+import React, { useState } from 'react'
+import './App.css'
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import HomePage from "./components/HomePage/HomePage.jsx";
+import StarshipDetail from "./components/StarshipDetail/StarshipDetail.jsx";
 
 function App() {
-  return (
-    <>
-      return (
-      <BrowserRouter>
-        <Routes>
-          {/* Anasayfa */}
-          <Route path="/" element={<HomePage />} />
+  const [count, setCount] = useState(0)
 
-          {/* Yıldız gemisi detay sayfası */}
-          <Route path="/details/:id" element={<DetailPage />} />
-        </Routes>
-      </BrowserRouter>
-      );
-    </>
-  );
+  return (
+
+        <div className="App">
+            <Router>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/starship/:id" element={<StarshipDetail />} />
+                </Routes>
+            </Router>
+        </div>
+  )
 }
 
-export default App;
+export default App
