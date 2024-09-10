@@ -1,8 +1,7 @@
+import React from "react";
 
-function LoadMoreButton() {
-  return (
-    <div>LoadMoreButton</div>
-  )
-}
+const LoadMoreButton = ({ loadMore }) => {
+  return <button onClick={loadMore}>Load More</button>;
+};
 
-export default LoadMoreButton
+export default LoadMoreButton;
